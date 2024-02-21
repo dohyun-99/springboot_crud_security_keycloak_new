@@ -25,7 +25,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak.211.43.12.178.nip.io:30155/realms/employee-dohyun #https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak  # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
+          issuer-uri: https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak #http://frontend-keycloak-ssl.dodom2.duckdns.org:31389/realms/employee-dohyun #https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak  # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
 
 jwt:
   auth:
@@ -37,7 +37,7 @@ app:
   # cors:
   #  allowed-origins: http://localhost:3000
   keycloak:
-    server : http://keycloak.211.43.12.178.nip.io:30155 #https://keycloak.apps.okd4.ktdemo.duckdns.org #http://keycloak.211.43.12.210.nip.io:30593 # http://211.252.87.34:40007
+    server : https://keycloak.apps.okd4.ktdemo.duckdns.org #http://keycloak.211.43.12.210.nip.io:30593 # http://211.252.87.34:40007
   #  keycloak:
   #    auth-server-url: ${KEYCLOAK_SERVER_URL:http://localhost:8080/auth}
   #    realm: ${KEYCLOAK_REALM:spring-boot-blueprint}
