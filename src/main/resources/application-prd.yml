@@ -16,7 +16,7 @@ spring:
   datasource:
     platform: mariadb
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://211.43.12.210:40001/admin
+    url: jdbc:mariadb://211.43.12.178:40001/admin
     username: admin
     #password: caravan
     password: admin
