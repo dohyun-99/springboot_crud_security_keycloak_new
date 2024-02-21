@@ -6,7 +6,7 @@ def docker_registry = "ghcr.io"
 def imageName = "ghcr.io/dohyun-99/springboot_crud_security_keycloak_new"
 def git_ops_name = "backend-keycloak-gitops"
 
-def fromImage = "ghcr.io/dohyun-99/jre17-runtime:v1.0.0"
+def fromImage = "ghcr.io/shclub/jre17-runtime:v1.0.0"
 
 // 본인 Namespace
 def P_NAMESPACE = "default"
