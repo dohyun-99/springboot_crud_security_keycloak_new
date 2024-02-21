@@ -3,7 +3,7 @@ def gitBranch = 'master'
 def docker_registry = "ghcr.io"  
 
 // 본인 이미지 사용
-def imageName = "ghcr.io/dohyun-99/springboot_crud_security_keycloak_new:v2"
+def imageName = "ghcr.io/dohyun-99/springboot_crud_security_keycloak_new"
 def git_ops_name = "backend-keycloak-gitops"
 
 def fromImage = "ghcr.io/dohyun-99/jre17-runtime:v1.0.0"
