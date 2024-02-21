@@ -25,7 +25,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak #http://frontend-keycloak-ssl.dodom2.duckdns.org:31389/realms/employee-dohyun #https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak  # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
+          issuer-uri: https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-dohyun #http://frontend-keycloak-ssl.dodom2.duckdns.org:31389/realms/employee-dohyun #https://keycloak.apps.okd4.ktdemo.duckdns.org/realms/employee-keycloak  # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
 
 jwt:
   auth:
