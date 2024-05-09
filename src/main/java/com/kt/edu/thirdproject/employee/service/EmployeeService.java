@@ -1,5 +1,6 @@
 package com.kt.edu.thirdproject.employee.service;
 
+import com.kt.edu.thirdproject.Ktedu;
 import com.kt.edu.thirdproject.employee.domain.EmployeeEntity;
 import com.kt.edu.thirdproject.common.exception.ResourceNotFoundException;
 import com.kt.edu.thirdproject.employee.repository.EmployeeRepository;
@@ -33,8 +34,11 @@ public class EmployeeService {
         this.employeeRepository = employeeRepository;
 
     }*/
+    //annotation 이 Transactional 인 method 만들어서 로그 찍기
+    @Transactional
     public List<EmployeeEntity> getEmployeeList() {
         log.info("Request to get all Employees");
+//        log.info("h2 password : " + h2Password );
         List<EmployeeEntity> employeeList = new ArrayList<>();
         employeeRepository.findAll().forEach(employeeList::add);
         return employeeList;
@@ -61,8 +65,10 @@ public class EmployeeService {
         return this.employeeRepository.save(employeeEntity);
     }
 
+//    @Transactional
+    @Ktedu // Ktedu 어노테이션 추가
     public EmployeeEntity update(Long id,EmployeeEntity employeeEntity) {
-        log.info("Request to update Employee : " +  employeeEntity);
+        // log.info("Request to update Employee : " +  employeeEntity);
         EmployeeEntity employee = employeeRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not exist with id :" + id));
 
